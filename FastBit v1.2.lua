@@ -84,21 +84,21 @@ function setColors( thisDlg )
 
 		if lockState == 0 then
 
-			actPal:setColor( app.fgColor.index, Color{ r = math.ceil( ( dlgData.r0 + dlgData.r1 + dlgData.r2 + dlgData.r3 + dlgData.r4 + dlgData.r5 + dlgData.r6 + dlgData.r7 + dlgData.r8 ) * rStep ), g = math.ceil( ( dlgData.g0 + dlgData.g1 + dlgData.g2 + dlgData.g3 + dlgData.g4 + dlgData.g5 + dlgData.g6 + dlgData.g7 + dlgData.g8 ) * gStep ), b =  math.ceil( ( dlgData.b0 + dlgData.b1 + dlgData.b2 + dlgData.b3 + dlgData.b4 + dlgData.b5 + dlgData.b6 + dlgData.b7 + dlgData.b8 ) * bStep ) } )
+			actPal:setColor( app.fgColor.index, Color{ r = math.floor( ( dlgData.r0 + dlgData.r1 + dlgData.r2 + dlgData.r3 + dlgData.r4 + dlgData.r5 + dlgData.r6 + dlgData.r7 + dlgData.r8 ) * rStep ), g = math.floor( ( dlgData.g0 + dlgData.g1 + dlgData.g2 + dlgData.g3 + dlgData.g4 + dlgData.g5 + dlgData.g6 + dlgData.g7 + dlgData.g8 ) * gStep ), b =  math.floor( ( dlgData.b0 + dlgData.b1 + dlgData.b2 + dlgData.b3 + dlgData.b4 + dlgData.b5 + dlgData.b6 + dlgData.b7 + dlgData.b8 ) * bStep ) } )
 
 		end
 
-		app.fgColor = Color{ r = math.ceil( ( dlgData.r0 + dlgData.r1 + dlgData.r2 + dlgData.r3 + dlgData.r4 + dlgData.r5 + dlgData.r6 + dlgData.r7 + dlgData.r8 ) * rStep ), g = math.ceil( ( dlgData.g0 + dlgData.g1 + dlgData.g2 + dlgData.g3 + dlgData.g4 + dlgData.g5 + dlgData.g6 + dlgData.g7 + dlgData.g8 ) * gStep ), b =  math.ceil( ( dlgData.b0 + dlgData.b1 + dlgData.b2 + dlgData.b3 + dlgData.b4 + dlgData.b5 + dlgData.b6 + dlgData.b7 + dlgData.b8 ) * bStep ) }
+		app.fgColor = Color{ r = math.floor( ( dlgData.r0 + dlgData.r1 + dlgData.r2 + dlgData.r3 + dlgData.r4 + dlgData.r5 + dlgData.r6 + dlgData.r7 + dlgData.r8 ) * rStep ), g = math.floor( ( dlgData.g0 + dlgData.g1 + dlgData.g2 + dlgData.g3 + dlgData.g4 + dlgData.g5 + dlgData.g6 + dlgData.g7 + dlgData.g8 ) * gStep ), b =  math.floor( ( dlgData.b0 + dlgData.b1 + dlgData.b2 + dlgData.b3 + dlgData.b4 + dlgData.b5 + dlgData.b6 + dlgData.b7 + dlgData.b8 ) * bStep ) }
 
 	elseif colSel == 0 then
 
 		if lockState == 0 then
 
-			actPal:setColor( app.bgColor.index, Color{ r = math.ceil( ( dlgData.r0 + dlgData.r1 + dlgData.r2 + dlgData.r3 + dlgData.r4 + dlgData.r5 + dlgData.r6 + dlgData.r7 + dlgData.r8 ) * rStep ), g = math.ceil( ( dlgData.g0 + dlgData.g1 + dlgData.g2 + dlgData.g3 + dlgData.g4 + dlgData.g5 + dlgData.g6 + dlgData.g7 + dlgData.g8 ) * gStep ), b =  math.ceil( ( dlgData.b0 + dlgData.b1 + dlgData.b2 + dlgData.b3 + dlgData.b4 + dlgData.b5 + dlgData.b6 + dlgData.b7 + dlgData.b8 ) * bStep ) } )
+			actPal:setColor( app.bgColor.index, Color{ r = math.floor( ( dlgData.r0 + dlgData.r1 + dlgData.r2 + dlgData.r3 + dlgData.r4 + dlgData.r5 + dlgData.r6 + dlgData.r7 + dlgData.r8 ) * rStep ), g = math.floor( ( dlgData.g0 + dlgData.g1 + dlgData.g2 + dlgData.g3 + dlgData.g4 + dlgData.g5 + dlgData.g6 + dlgData.g7 + dlgData.g8 ) * gStep ), b =  math.floor( ( dlgData.b0 + dlgData.b1 + dlgData.b2 + dlgData.b3 + dlgData.b4 + dlgData.b5 + dlgData.b6 + dlgData.b7 + dlgData.b8 ) * bStep ) } )
 
 		end
 
-		app.bgColor = Color{ r = math.ceil( ( dlgData.r0 + dlgData.r1 + dlgData.r2 + dlgData.r3 + dlgData.r4 + dlgData.r5 + dlgData.r6 + dlgData.r7 + dlgData.r8 ) * rStep ), g = math.ceil( ( dlgData.g0 + dlgData.g1 + dlgData.g2 + dlgData.g3 + dlgData.g4 + dlgData.g5 + dlgData.g6 + dlgData.g7 + dlgData.g8 ) * gStep ), b =  math.ceil( ( dlgData.b0 + dlgData.b1 + dlgData.b2 + dlgData.b3 + dlgData.b4 + dlgData.b5 + dlgData.b6 + dlgData.b7 + dlgData.b8 ) * bStep ) }
+		app.bgColor = Color{ r = math.floor( ( dlgData.r0 + dlgData.r1 + dlgData.r2 + dlgData.r3 + dlgData.r4 + dlgData.r5 + dlgData.r6 + dlgData.r7 + dlgData.r8 ) * rStep ), g = math.floor( ( dlgData.g0 + dlgData.g1 + dlgData.g2 + dlgData.g3 + dlgData.g4 + dlgData.g5 + dlgData.g6 + dlgData.g7 + dlgData.g8 ) * gStep ), b =  math.floor( ( dlgData.b0 + dlgData.b1 + dlgData.b2 + dlgData.b3 + dlgData.b4 + dlgData.b5 + dlgData.b6 + dlgData.b7 + dlgData.b8 ) * bStep ) }
 
 	end
 
@@ -254,7 +254,7 @@ function swatchUpdate( thisDlg )
 
 		local dlgData = thisDlg.data
 
-		dlgData.swatch = { Color{ r = math.ceil( ( dlgData.r0 + dlgData.r1 + dlgData.r2 + dlgData.r3 + dlgData.r4 + dlgData.r5 + dlgData.r6 + dlgData.r7 + dlgData.r8 ) * rStep ), g = math.ceil( ( dlgData.g0 + dlgData.g1 + dlgData.g2 + dlgData.g3 + dlgData.g4 + dlgData.g5 + dlgData.g6 + dlgData.g7 + dlgData.g8 ) * gStep ), b =  math.ceil( ( dlgData.b0 + dlgData.b1 + dlgData.b2 + dlgData.b3 + dlgData.b4 + dlgData.b5 + dlgData.b6 + dlgData.b7 + dlgData.b8 ) * bStep ) } }
+		dlgData.swatch = { Color{ r = math.floor( ( dlgData.r0 + dlgData.r1 + dlgData.r2 + dlgData.r3 + dlgData.r4 + dlgData.r5 + dlgData.r6 + dlgData.r7 + dlgData.r8 ) * rStep ), g = math.floor( ( dlgData.g0 + dlgData.g1 + dlgData.g2 + dlgData.g3 + dlgData.g4 + dlgData.g5 + dlgData.g6 + dlgData.g7 + dlgData.g8 ) * gStep ), b =  math.floor( ( dlgData.b0 + dlgData.b1 + dlgData.b2 + dlgData.b3 + dlgData.b4 + dlgData.b5 + dlgData.b6 + dlgData.b7 + dlgData.b8 ) * bStep ) } }
 
 		thisDlg.data = dlgData
 
